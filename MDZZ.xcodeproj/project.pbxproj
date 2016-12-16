@@ -6,16 +6,39 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		C0C35F6C1E039020006BAF86 /* MDZZ-universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C0C35F6F1E039020006BAF86 /* Build configuration list for PBXAggregateTarget "MDZZ-universal" */;
+			buildPhases = (
+				C0C35F721E039035006BAF86 /* ShellScript */,
+			);
+			dependencies = (
+				C0C35F711E039031006BAF86 /* PBXTargetDependency */,
+			);
+			name = "MDZZ-universal";
+			productName = "MDZZ-universal";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		C0C35F581E0385F4006BAF86 /* MDZZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C35F4E1E0385F4006BAF86 /* MDZZ.framework */; };
 		C0C35F5D1E0385F4006BAF86 /* MDZZTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C35F5C1E0385F4006BAF86 /* MDZZTests.m */; };
 		C0C35F5F1E0385F4006BAF86 /* MDZZ.h in Headers */ = {isa = PBXBuildFile; fileRef = C0C35F511E0385F4006BAF86 /* MDZZ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0C35F6A1E038609006BAF86 /* MDZZURLCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C0C35F681E038609006BAF86 /* MDZZURLCoder.h */; };
 		C0C35F6B1E038609006BAF86 /* MDZZURLCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C35F691E038609006BAF86 /* MDZZURLCoder.m */; };
+		C0C35F771E039717006BAF86 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C35F761E039717006BAF86 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		C0C35F591E0385F4006BAF86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C35F451E0385F4006BAF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0C35F4D1E0385F4006BAF86;
+			remoteInfo = MDZZ;
+		};
+		C0C35F701E039031006BAF86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C0C35F451E0385F4006BAF86 /* Project object */;
 			proxyType = 1;
@@ -33,6 +56,8 @@
 		C0C35F5E1E0385F4006BAF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0C35F681E038609006BAF86 /* MDZZURLCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDZZURLCoder.h; sourceTree = "<group>"; };
 		C0C35F691E038609006BAF86 /* MDZZURLCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDZZURLCoder.m; sourceTree = "<group>"; };
+		C0C35F741E039702006BAF86 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C0C35F761E039717006BAF86 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C35F771E039717006BAF86 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +86,7 @@
 				C0C35F501E0385F4006BAF86 /* MDZZ */,
 				C0C35F5B1E0385F4006BAF86 /* MDZZTests */,
 				C0C35F4F1E0385F4006BAF86 /* Products */,
+				C0C35F731E039702006BAF86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +117,15 @@
 				C0C35F5E1E0385F4006BAF86 /* Info.plist */,
 			);
 			path = MDZZTests;
+			sourceTree = "<group>";
+		};
+		C0C35F731E039702006BAF86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0C35F761E039717006BAF86 /* libz.tbd */,
+				C0C35F741E039702006BAF86 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +198,11 @@
 						DevelopmentTeam = G497YX6CBT;
 						ProvisioningStyle = Automatic;
 					};
+					C0C35F6C1E039020006BAF86 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = G497YX6CBT;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = C0C35F481E0385F4006BAF86 /* Build configuration list for PBXProject "MDZZ" */;
@@ -178,6 +219,7 @@
 			targets = (
 				C0C35F4D1E0385F4006BAF86 /* MDZZ */,
 				C0C35F561E0385F4006BAF86 /* MDZZTests */,
+				C0C35F6C1E039020006BAF86 /* MDZZ-universal */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +240,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0C35F721E039035006BAF86 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./scripts/build-universal-framework.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0C35F491E0385F4006BAF86 /* Sources */ = {
@@ -223,6 +281,11 @@
 			isa = PBXTargetDependency;
 			target = C0C35F4D1E0385F4006BAF86 /* MDZZ */;
 			targetProxy = C0C35F591E0385F4006BAF86 /* PBXContainerItemProxy */;
+		};
+		C0C35F711E039031006BAF86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0C35F4D1E0385F4006BAF86 /* MDZZ */;
+			targetProxy = C0C35F701E039031006BAF86 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -381,6 +444,22 @@
 			};
 			name = Release;
 		};
+		C0C35F6D1E039020006BAF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = G497YX6CBT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C0C35F6E1E039020006BAF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = G497YX6CBT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -400,6 +479,7 @@
 				C0C35F641E0385F4006BAF86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0C35F651E0385F4006BAF86 /* Build configuration list for PBXNativeTarget "MDZZTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +488,16 @@
 				C0C35F671E0385F4006BAF86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C35F6F1E039020006BAF86 /* Build configuration list for PBXAggregateTarget "MDZZ-universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C35F6D1E039020006BAF86 /* Debug */,
+				C0C35F6E1E039020006BAF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
